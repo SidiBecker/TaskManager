@@ -11,13 +11,15 @@ namespace TaskManager.Controllers
         [HttpGet]
         public ActionResult<List<UserModel>> GetAll()
         {
-
+             
             UserModel userModel = new UserModel();
-            userModel.Id = 1;
+            userModel.Id = 1; 
+               
             userModel.Name = "Test";
-            userModel.Email = "email@test.com";
+            userModel.Email = "email@test.com"; 
 
             List<UserModel> users = new List<UserModel>();
+
             users.Add(userModel);
 
             return Ok(users);
